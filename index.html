@@ -1,4 +1,5 @@
- function copieChoix()
+<script type="text/javascript">
+function copieChoix()
  {
  var separ = ", ";
  var separ2 = ". ";
@@ -34,6 +35,8 @@ var separ9 = " p.";
  return false
  }
  }
+</script>
+
 
 <form name="form"><br /><b>1 - Choisissez le type de document &agrave; citer.</b><br />  <br /><input name="typedoc" type="radio" value="Livre" onclick="
  if (this.checked) {
@@ -110,7 +113,7 @@ this.form.result7.style.display='inline';
 <tr>
 <td style="padding-top:5px;"><input size="18" value="Titre du p&eacute;riodique" title="Par exemple Science &amp; vie junior, Wapiti..." id="result4" /></td>
 <td style="padding-top:5px;"><input size="18" value="Nom du site web" id="result5" /></td>
-<td style="padding-top:5px;"><input size="18" value="&eacute;diteur" title="Se trouve sur la couverture ou dans les premi&egrave;res pages du livre." id="result6" /></td>
+<td style="padding-top:5px;"><input size="18" value="&Eacute;diteur" title="Se trouve sur la couverture ou dans les premi&egrave;res pages du livre." id="result6" /></td>
 </tr>
 <tr>
 <td style="padding-top:5px;"><input size="18" value="Titre du chapitre" id="result7" /></td>
@@ -133,4 +136,4 @@ this.form.result7.style.display='inline';
 <b>3 - Copiez-collez la r&eacute;f&eacute;rence bibliographique suivante :</b><br /><br /><textarea readonly="readonly" cols="50" rows="5" id="result16"></textarea> </form><br />
 N'oubliez pas de <b>mettre en forme le titre</b> (situ&eacute; entre les balises &lt;i&gt; et &lt;/i&gt;) :<br />
 - le <u>souligner</u>, pour une bibliographie &eacute;crite &agrave; la main<br />
-- le mettre en <i>italique</i>, pour une bibliographie &agrave; l'ordinateur<br
+- le mettre en <i>italique</i>, pour une bibliographie &agrave; l'ordinateur<br />
