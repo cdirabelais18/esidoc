@@ -5,8 +5,8 @@ function copieChoix()
  var separ2 = ". ";
  var separ3 = "p. ";
  var separ4 = "n° "; 
- var separ5 = " Consulté le : ";
- var separ6 = "Disponible sur : "; 
+ var separ5 = "Disponible sur : ";
+ var separ6 = " Consulté le : ";
  var separ7 = " [En ligne]";
  var separ8 = "\"";
 var separ9 = " p.";
@@ -27,7 +27,7 @@ var separ9 = " p.";
  }
  if (document.form.web.checked == true) {
  document.getElementById("result16").focus();
- var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result15").value + separ8 + separ2 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ5 + document.getElementById("result10").value + separ2 + separ6 + document.getElementById("result14").value;
+ var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result15").value + separ8 + separ2 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ5 + document.getElementById("result14").value + separ2 + separ6 + document.getElementById("result10").value;
  document.getElementById("result16").value = concat;
  }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)) {
@@ -111,7 +111,7 @@ this.form.result7.style.display='inline';
 <td style="padding-top:5px;"><input size="18" value="Titre du livre" id="result3" /></td>
 </tr>
 <tr>
-<td style="padding-top:5px;"><input size="18" value="Titre du p&eacute;riodique" title="Par exemple Science &amp; vie junior, Wapiti..." id="result4" /></td>
+<td style="padding-top:5px;"><input size="18" value="In : Titre du p&eacute;riodique" title="Par exemple Science &amp; vie junior, Wapiti..." id="result4" /></td>
 <td style="padding-top:5px;"><input size="18" value="Nom du site web" id="result5" /></td>
 <td style="padding-top:5px;"><input size="18" value="&Eacute;diteur" title="Se trouve sur la couverture ou dans les premi&egrave;res pages du livre." id="result6" /></td>
 </tr>
